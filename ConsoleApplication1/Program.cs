@@ -12,23 +12,23 @@ namespace ConsoleApplication1
         {
             public double first, second;
 
-            public Pair(double first, double second)
+            public Pair(double first, double second) //Nokta objesi
             {
-                this.first = first;
-                this.second = second;
+                this.first = first; //x kord.
+                this.second = second; //y kord.
             }
         }
 
-      
-        static void lineFromPoints(Pair P, Pair Q, Pair P1, Pair Q1)
+
+        static void lineFromPoints(Pair P, Pair Q, Pair P1, Pair Q1) //Kontrol yapılan method. P, Q ilk doğru. P1, Q1 ikinci doğru.
         {
             bool exit = true;
             //İlk koordinatlar için doğru oluşturma kontrolü.
-            if(P.first == Q.first && P.second == Q.second)
+            if (P.first == Q.first && P.second == Q.second)
             {
                 Console.WriteLine("İlk girilen koordinatlar bir doğru oluşturmuyor.");
                 exit = false;
-                
+
             }
             //İkinci koordinatlar için doğru oluşturma kontrolü.
             if (exit == true)
@@ -41,8 +41,8 @@ namespace ConsoleApplication1
                 }
 
             }
-         
-            
+
+            //ax+by+c doğru denklemindeki a b ve c'yi bulma operasyonu.
             double a = Q.second - P.second;
             double b = P.first - Q.first;
             double c = a * (P.first) + b * (P.second);
@@ -50,6 +50,8 @@ namespace ConsoleApplication1
             double a1 = Q1.second - P1.second;
             double b1 = P1.first - Q1.first;
             double c1 = a * (P1.first) + b * (P1.second);
+
+            //Yatay doğrular için kontrolün yapıldığı yer.
             if (exit == true)
             {
                 if (a == 0 && a1 == 0 && P.second == P1.second && Q.second == Q1.second)
@@ -64,9 +66,10 @@ namespace ConsoleApplication1
 
                 }
             }
-            if(exit == true)
+            //Dikey doğrular için kontrolün yapıldığı yer.
+            if (exit == true)
             {
-                if(b == 0 && b1 == 0 &&   P.first == P1.first && Q.first == Q1.first)
+                if (b == 0 && b1 == 0 && P.first == P1.first && Q.first == Q1.first)
                 {
                     Console.WriteLine("Doğrular çakışıyor...");
                     exit = false;
@@ -79,6 +82,7 @@ namespace ConsoleApplication1
                 }
             }
 
+            //Diyagonal doğrular için asıl karşılaştırmanın yapıldığı yer.
             if (exit == true)
             {
                 if (a / a1 == b / b1 && a / a1 != -c / -c1)
@@ -94,36 +98,16 @@ namespace ConsoleApplication1
                     Console.WriteLine("Doğrular çakışıyor...");
                 }
             }
-            
-            
-           // if (b < 0)
-           // {
-           //     Console.WriteLine(
-           //         "The line passing through points P and Q is: "
-           //         + a + "x - " + b + "y = " + c);
-           // }
-           // else {
-           //     Console.WriteLine(
-           //         "The line passing through points P and Q is: "
-           //         + a + "x + " + b + "y = " + c);
-           //}
-           // if (b < 0)
-           // {
-           //     Console.WriteLine(
-           //         "The line passing through points P1 and Q1 is: "
-           //         + a1 + "x - " + b1 + "y = " + c1);
-           // }
-           // else {
-           //     Console.WriteLine(
-           //         "The line passing through points P1 and Q1 is: "
-           //         + a1 + "x + " + b1 + "y = " + c1);
-           // }
+
         }
 
 
         static void Main(string[] args)
         {
-                int co1, co2, co3, co4, co5, co6, co7, co8;
+            while (true)
+            {
+
+                int co1, co2, co3, co4, co5, co6, co7, co8; //koordinat değerleri.
 
 
                 //İlk doğru
@@ -138,6 +122,7 @@ namespace ConsoleApplication1
                 co3 = Convert.ToInt32(Console.ReadLine());
                 Console.Write("İkinci nokta için Y koordinatını girin: ");
                 co4 = Convert.ToInt32(Console.ReadLine());
+
                 //İkinci doğru
                 Console.Write("İKİNCİ DOĞRUYU YARATMAK İÇİN: ");
                 Console.WriteLine();
@@ -149,19 +134,20 @@ namespace ConsoleApplication1
                 co7 = Convert.ToInt32(Console.ReadLine());
                 Console.Write("İkinci nokta için Y koordinatını girin: ");
                 co8 = Convert.ToInt32(Console.ReadLine());
-                
 
 
-                Pair P1 = new Pair(co1, co2); //ilk nokta
-                Pair Q1 = new Pair(co3, co4); //ikinci nokta
 
-                Pair P2 = new Pair(co5, co6); //ilk nokta
-                Pair Q2 = new Pair(co7, co8); // ikinci nokta
+                Pair P1 = new Pair(co1, co2); //ilk doğru için ilk nokta
+                Pair Q1 = new Pair(co3, co4); //ilk doğru için ikinci nokta
+
+                Pair P2 = new Pair(co5, co6); //ikinci doğru için ilk nokta
+                Pair Q2 = new Pair(co7, co8); //ikinci doğru için ikinci nokta
                 lineFromPoints(P1, Q1, P2, Q2);
-                Console.Read();
 
-            
-           
+            }
+
+
+
         }
     }
 }
