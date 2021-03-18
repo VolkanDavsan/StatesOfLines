@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,7 +50,7 @@ namespace ConsoleApplication1
 
             double a1 = Q1.second - P1.second;
             double b1 = P1.first - Q1.first;
-            double c1 = a * (P1.first) + b * (P1.second);
+            double c1 = a1 * (P1.first) + b1 * (P1.second);
 
             //Yatay doğrular için kontrolün yapıldığı yer.
             if (exit == true)
@@ -85,19 +86,22 @@ namespace ConsoleApplication1
             //Diyagonal doğrular için asıl karşılaştırmanın yapıldığı yer.
             if (exit == true)
             {
-                if (a / a1 == b / b1 && a / a1 != -c / -c1)
+                if ((a / a1) == (b / b1) && (a / a1) == (-c / -c1))
                 {
-                    Console.WriteLine("Doğrular birbirine paraleldir...");
+                    Console.WriteLine("Doğrular çakışıyor...");
                 }
                 else if (a / a1 != b / b1)
                 {
                     Console.WriteLine("Doğrular birbiriyle kesişiyor...");
                 }
-                else if (a / a1 == b / b1 && a / a1 == -c / -c1)
+                else if ((a / a1 == b / b1) && (a / a1 != -c / -c1))
                 {
-                    Console.WriteLine("Doğrular çakışıyor...");
+                    Console.WriteLine("Doğrular birbirine paraleldir...");
+
+
                 }
             }
+
 
         }
 
