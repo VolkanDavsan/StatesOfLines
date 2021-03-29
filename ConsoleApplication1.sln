@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatesofLinesApp", "ConsoleApplication1\StatesofLinesApp.csproj", "{C332392D-04CA-4583-BFDC-6D434C967798}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintGraph", "PrintGraph\PrintGraph.csproj", "{88D222C5-CA36-47BE-B89C-2E28D0345243}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C332392D-04CA-4583-BFDC-6D434C967798}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C332392D-04CA-4583-BFDC-6D434C967798}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C332392D-04CA-4583-BFDC-6D434C967798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88D222C5-CA36-47BE-B89C-2E28D0345243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88D222C5-CA36-47BE-B89C-2E28D0345243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88D222C5-CA36-47BE-B89C-2E28D0345243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88D222C5-CA36-47BE-B89C-2E28D0345243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
