@@ -496,6 +496,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1.TabIndex = 59;
+            this.numericUpDown1.DecimalPlaces = 1;
             // 
             // numericUpDown2
             // 
@@ -513,6 +514,7 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown2.TabIndex = 60;
+            this.numericUpDown2.DecimalPlaces = 1;
             // 
             // numericUpDown3
             // 
@@ -530,6 +532,7 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown3.TabIndex = 61;
+            this.numericUpDown3.DecimalPlaces = 1;
             // 
             // numericUpDown4
             // 
@@ -547,6 +550,7 @@
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown4.TabIndex = 62;
+            this.numericUpDown4.DecimalPlaces = 1;
             // 
             // numericUpDown5
             // 
@@ -564,6 +568,7 @@
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown5.TabIndex = 63;
+            this.numericUpDown5.DecimalPlaces = 1;
             // 
             // numericUpDown6
             // 
@@ -581,6 +586,7 @@
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown6.TabIndex = 64;
+            this.numericUpDown6.DecimalPlaces = 1;
             // 
             // numericUpDown7
             // 
@@ -598,6 +604,7 @@
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown7.TabIndex = 65;
+            this.numericUpDown7.DecimalPlaces = 1;
             // 
             // numericUpDown8
             // 
@@ -615,6 +622,7 @@
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown8.TabIndex = 66;
+            this.numericUpDown8.DecimalPlaces = 1;
             // 
             // label43
             // 
